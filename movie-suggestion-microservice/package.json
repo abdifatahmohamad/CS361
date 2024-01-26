@@ -1,0 +1,22 @@
+{
+  "name": "movie-suggestion-microservice",
+  "version": "1.0.0",
+  "description": "A microservice that suggests movie recommendations based on user preferences.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "18.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
