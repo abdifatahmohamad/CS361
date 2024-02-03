@@ -88,4 +88,9 @@ curl -X PUT -H "Content-Type: application/json" -d '{"task":"Updated Task","comp
 Delete a task:
 curl -X DELETE http://localhost:3000/tasks/50
 
+### Test Live Link
+
+To test the task list backend API, it seamlessly hosted on [Render.com](https://task-list-api-u4p8.onrender.com/)
+You can use the same curl commands, replacing `http://localhost:3000` with the live link.
+
 This README.md file provides detailed instructions for installation, API endpoints, and testing using `curl`.
