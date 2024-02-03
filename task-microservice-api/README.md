@@ -8,7 +8,8 @@ This microservice provides a simple API for managing tasks.
 
    ```bash
    git clone <repository-url>
-   cd task-list-api
+   cd CS361
+   cd task-microservice-api
 
    ```
 
