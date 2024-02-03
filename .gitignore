@@ -5,6 +5,7 @@
 .vscode
 
 # Node.js
+**/node_modules
 node_modules
 
 # Node.js package files
