@@ -14,9 +14,13 @@ This microservice provides a simple API for managing tasks.
    ```
 
 2. Install dependencies:
+   ```bash
    npm install
+   ```
 3. Start the server:
+   ```bash
    npm start
+   ```
 
 The server will be running at `http://localhost:3000`.
 
