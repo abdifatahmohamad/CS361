@@ -1,5 +1,5 @@
 {
-  "name": "task-microservice-api",
+  "name": "task-list-api",
   "version": "1.0.0",
   "description": "Microservice API for Task List Web App",
   "main": "server.js",

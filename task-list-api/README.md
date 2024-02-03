@@ -9,17 +9,43 @@ This microservice provides a simple API for managing tasks.
    ```bash
    git clone <repository-url>
    cd CS361
-   cd task-microservice-api
-
+   cd task-list-api
    ```
 
-2. Install dependencies:
+2. Initialize your project and install the required dependencies:
+
+   ```bash
+   npm init -y
+   npm install express body-parser
+   ```
+
+3. Install dependencies:
    ```bash
    npm install
    ```
-3. Start the server:
+4. Start the server:
+
    ```bash
    npm start
+   ```
+
+5. Microservice directory structure:
+
+   ```bash
+      task-list-api
+   |-- src
+   |   |-- controllers
+   |   |   |-- taskController.js
+   |   |
+   |   |-- routes
+   |   |   |-- taskRoutes.js
+   |   |
+   |   |-- services
+   |       |-- taskService.js
+   |
+   |-- tasks.json
+   |-- service.js
+
    ```
 
 The server will be running at `http://localhost:3000`.
