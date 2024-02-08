@@ -1,5 +1,6 @@
 const express = require('express');
 const fs = require('fs');
+const bodyParser = require('body-parser'); // Import body-parser
 const app = express();
 const cors = require('cors');
 app.use(cors());
@@ -44,6 +45,10 @@ app.get('/search', (req, res) => {
         res.status(404).json({ error: 'No movies found for the specified genre' });
     }
 });
+
+// Use body-parser to parse request bodies
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 const PORT = 3000;
 app.listen(PORT, () => {
