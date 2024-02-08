@@ -27,6 +27,23 @@ function Watchlist() {
     toast.success('Movie removed from Watchlist!');
   };
 
+  const handleAddToWatched = (movie) => {
+    const watchedList = JSON.parse(localStorage.getItem('watched')) || [];
+    const updatedWatchlist = watchlist.filter((item) => item.id !== movie.id);
+
+    if (watchedList.some((item) => item.id === movie.id)) {
+      toast.error('Movie already in the watched list!');
+    } else {
+      const updatedWatchedList = [...watchedList, movie];
+      localStorage.setItem('watched', JSON.stringify(updatedWatchedList));
+      toast.success('Movie added to Watched list!');
+
+      // Update watchlist without the movie
+      setWatchlist(updatedWatchlist);
+      localStorage.setItem('watchlist', JSON.stringify(updatedWatchlist));
+    }
+  };
+
   return (
     <div className="movie-grid-container">
       <ToastContainer position="top-center" />
@@ -53,7 +70,9 @@ function Watchlist() {
                       <p className="card-text">Release Date: {movie.release_date}</p>
                       <p className="card-text">Rating: {movie.rating}</p>
                       <div className="button-group">
-                        <button className="btn btn-secondary">Watched</button>
+                        <button className="btn btn-secondary" onClick={() => handleAddToWatched(movie)}>
+                          Watched
+                        </button>
                         <button className="btn btn-info">Details</button>
                         <button className="btn btn-success">Recommendations</button>
                         <button className="btn btn-warning">Similar Movies</button>

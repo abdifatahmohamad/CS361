@@ -5,9 +5,10 @@ import Navbar from './components/Navbar';
 import MovieGrid from './components/MovieGrid';
 import Footer from './components/Footer';
 import Recommendations from './components/Recommendations';
-import Watchlist from './components/Watchlist'; // Import Watchlist component
-import LoadingSpinner from './components/LoadingSpinner'; // Import the LoadingSpinner component
-import withLoadingSpinner from './components/WithLoadingSpinner'; // Import the withLoadingSpinner HOC
+import Watchlist from './components/Watchlist';
+import Watched from './components/Watched'; // Import Watched component
+import LoadingSpinner from './components/LoadingSpinner';
+import withLoadingSpinner from './components/WithLoadingSpinner';
 import './styles.css';
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
         <Routes>
           <Route path="/" element={<MovieGrid />} />
           <Route path="/recommendations" element={<Recommendations />} />
-          <Route path="/watchlist" element={<Watchlist />} /> {/* Add Watchlist route */}
-          {/* Add more routes here */}
+          <Route path="/watchlist" element={<Watchlist />} />
+          <Route path="/watched" element={<Watched />} /> {/* Add Watched route */}
         </Routes>
         <Footer />
       </div>
@@ -27,4 +28,4 @@ function App() {
   );
 }
 
-export default withLoadingSpinner(App); // Wrap the App component with withLoadingSpinner HOC
+export default withLoadingSpinner(App);

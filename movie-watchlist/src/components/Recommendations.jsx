@@ -25,6 +25,23 @@ function Recommendations() {
 
   const filteredMovies = movies.slice(6); // Exclude the first 6 movies
 
+  const handleAddToWatched = (movie) => {
+    const watchedList = JSON.parse(localStorage.getItem('watched')) || [];
+    const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+
+    if (watchedList.some((item) => item.id === movie.id)) {
+      toast.error('Movie already in the watched list!');
+    } else {
+      const updatedWatchedList = [...watchedList, movie];
+      localStorage.setItem('watched', JSON.stringify(updatedWatchedList));
+      toast.success('Movie added to Watched list!');
+
+      // Remove from watchlist if present
+      const updatedWatchlist = watchlist.filter((item) => item.id !== movie.id);
+      localStorage.setItem('watchlist', JSON.stringify(updatedWatchlist));
+    }
+  };
+
   const handleAddToWatchlist = (movie) => {
     const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
     if (watchlist.some((item) => item.id === movie.id)) {
@@ -57,7 +74,9 @@ function Recommendations() {
                     <button className="btn btn-primary" onClick={() => handleAddToWatchlist(movie)}>
                       Add to Watchlist
                     </button>
-                    <button className="btn btn-secondary">Watched</button>
+                    <button className="btn btn-secondary" onClick={() => handleAddToWatched(movie)}>
+                      Watched
+                    </button>
                     <button className="btn btn-info">Details</button>
                     <button className="btn btn-warning">Similar Movies</button>
                   </div>

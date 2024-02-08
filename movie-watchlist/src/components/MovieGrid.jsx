@@ -13,6 +13,8 @@ function MovieGrid() {
   useEffect(() => {
     const fetchMovieData = async () => {
       try {
+        // Simulate delay before fetching data
+        await new Promise(resolve => setTimeout(resolve, 1000));
         const data = await fetchMovies();
         setMovies(data.slice(0, 6));
         setLoading(false);
@@ -32,6 +34,16 @@ function MovieGrid() {
     } else {
       localStorage.setItem('watchlist', JSON.stringify([...watchlist, movie]));
       toast.success('Movie added to Watchlist!');
+    }
+  };
+
+  const handleAddToWatched = (movie) => {
+    const watched = JSON.parse(localStorage.getItem('watched')) || [];
+    if (watched.some((item) => item.id === movie.id)) {
+      toast.error('Movie already in the watched list!');
+    } else {
+      localStorage.setItem('watched', JSON.stringify([...watched, movie]));
+      toast.success('Movie added to Watched list!');
     }
   };
 
@@ -62,7 +74,9 @@ function MovieGrid() {
                       <button className="btn btn-primary" onClick={() => handleAddToWatchlist(movie)}>
                         Add to Watchlist
                       </button>
-                      <button className="btn btn-secondary">Watched</button>
+                      <button className="btn btn-secondary" onClick={() => handleAddToWatched(movie)}>
+                        Watched
+                      </button>
                       <button className="btn btn-info">Details</button>
                       <button className="btn btn-success" onClick={handleRecommendationsClick}>
                         Recommendations
