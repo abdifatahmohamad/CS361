@@ -138,6 +138,15 @@ body {
   color: #000; /* Black text on yellow background */
 }
 
+.btn-danger {
+  background-color: #dc3545; /* Red color */
+  color: #fff; /* White text */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
 .spinner-container {
   display: flex;
   justify-content: center;

@@ -23,6 +23,16 @@ function Recommendations() {
 
   const filteredMovies = movies.slice(6); // Exclude the first 6 movies
 
+  const handleAddToWatchlist = (movie) => {
+    const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
+    if (watchlist.some((item) => item.id === movie.id)) {
+      alert('Movie already in the watchlist!');
+    } else {
+      localStorage.setItem('watchlist', JSON.stringify([...watchlist, movie]));
+      alert('Movie added to Watchlist!');
+    }
+  };
+
   return (
     <div className="movie-grid-container">
       {loading ? ( // Conditionally render spinner while loading
@@ -41,7 +51,9 @@ function Recommendations() {
                   <p className="card-text">Release Date: {movie.release_date}</p>
                   <p className="card-text">Rating: {movie.rating}</p>
                   <div className="button-group">
-                    <button className="btn btn-primary">Add to Watchlist</button>
+                    <button className="btn btn-primary" onClick={() => handleAddToWatchlist(movie)}>
+                      Add to Watchlist
+                    </button>
                     <button className="btn btn-secondary">Watched</button>
                     <button className="btn btn-info">Details</button>
                     <button className="btn btn-warning">Similar Movies</button>
