@@ -1,79 +1,310 @@
 [
-  { "id": 1, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆" },
-  { "id": 2, "title": "The Shawshank Redemption", "genre": "Drama", "release_date": "1994", "rating": "★★★★★" },
-  { "id": 3, "title": "Pulp Fiction", "genre": "Crime", "release_date": "1994", "rating": "★★★★★" },
-  { "id": 4, "title": "The Dark Knight", "genre": "Action", "release_date": "2008", "rating": "★★★★★" },
-  { "id": 5, "title": "Forrest Gump", "genre": "Drama", "release_date": "1994", "rating": "★★★★☆" },
-  { "id": 6, "title": "The Godfather", "genre": "Crime", "release_date": "1972", "rating": "★★★★★" },
-  { "id": 7, "title": "Titanic", "genre": "Romance", "release_date": "1997", "rating": "★★★★☆" },
-  { "id": 8, "title": "The Matrix", "genre": "Sci-Fi", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 9, "title": "The Lord of the Rings: The Fellowship of the Ring", "genre": "Fantasy", "release_date": "2001", "rating": "★★★★☆" },
-  { "id": 10, "title": "Jurassic Park", "genre": "Adventure", "release_date": "1993", "rating": "★★★★☆" },
-  { "id": 11, "title": "Avatar", "genre": "Action", "release_date": "2009", "rating": "★★★★☆" },
-  { "id": 12, "title": "Inglourious Basterds", "genre": "War", "release_date": "2009", "rating": "★★★★☆" },
-  { "id": 13, "title": "The Silence of the Lambs", "genre": "Thriller", "release_date": "1991", "rating": "★★★★★" },
-  { "id": 14, "title": "Fight Club", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 15, "title": "The Great Gatsby", "genre": "Romance", "release_date": "2013", "rating": "★★★★☆" },
-  { "id": 16, "title": "The Revenant", "genre": "Adventure", "release_date": "2015", "rating": "★★★★☆" },
-  { "id": 17, "title": "Eternal Sunshine of the Spotless Mind", "genre": "Romance", "release_date": "2004", "rating": "★★★★☆" },
-  { "id": 18, "title": "Interstellar", "genre": "Sci-Fi", "release_date": "2014", "rating": "★★★★☆" },
-  { "id": 19, "title": "The Lion King", "genre": "Animation", "release_date": "1994", "rating": "★★★★☆" },
-  { "id": 20, "title": "Casablanca", "genre": "Romance", "release_date": "1942", "rating": "★★★★★" },
-  { "id": 21, "title": "The Social Network", "genre": "Drama", "release_date": "2010", "rating": "★★★★☆" },
-  { "id": 22, "title": "Gladiator", "genre": "Action", "release_date": "2000", "rating": "★★★★☆" },
-  { "id": 23, "title": "Back to the Future", "genre": "Adventure", "release_date": "1985", "rating": "★★★★☆" },
-  { "id": 24, "title": "The Departed", "genre": "Crime", "release_date": "2006", "rating": "★★★★☆" },
-  { "id": 25, "title": "Memento", "genre": "Mystery", "release_date": "2000", "rating": "★★★★☆" },
-  { "id": 27, "title": "The Godfather: Part II", "genre": "Crime", "release_date": "1974", "rating": "★★★★★" },
-  { "id": 28, "title": "The Usual Suspects", "genre": "Mystery", "release_date": "1995", "rating": "★★★★☆" },
-  { "id": 29, "title": "Shutter Island", "genre": "Mystery", "release_date": "2010", "rating": "★★★★☆" },
-  { "id": 30, "title": "The Grand Budapest Hotel", "genre": "Comedy", "release_date": "2014", "rating": "★★★★☆" },
-  { "id": 31, "title": "La La Land", "genre": "Musical", "release_date": "2016", "rating": "★★★★☆" },
-  { "id": 32, "title": "The Green Mile", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 33, "title": "Blade Runner", "genre": "Sci-Fi", "release_date": "1982", "rating": "★★★★☆" },
-  { "id": 34, "title": "Whiplash", "genre": "Drama", "release_date": "2014", "rating": "★★★★☆" },
-  { "id": 35, "title": "The Dark Knight Rises", "genre": "Action", "release_date": "2012", "rating": "★★★★☆" },
-  { "id": 37, "title": "Schindler's List", "genre": "Drama", "release_date": "1993", "rating": "★★★★★" },
-  { "id": 39, "title": "The Prestige", "genre": "Mystery", "release_date": "2006", "rating": "★★★★☆" },
-  { "id": 40, "title": "City of God", "genre": "Crime", "release_date": "2002", "rating": "★★★★☆" },
-  { "id": 41, "title": "Casino Royale", "genre": "Action", "release_date": "2006", "rating": "★★★★☆" },
-  { "id": 42, "title": "Goodfellas", "genre": "Crime", "release_date": "1990", "rating": "★★★★★" },
-  { "id": 43, "title": "Amélie", "genre": "Romance", "release_date": "2001", "rating": "★★★★☆" },
-  { "id": 45, "title": "No Country for Old Men", "genre": "Thriller", "release_date": "2007", "rating": "★★★★☆" },
-  { "id": 46, "title": "The Terminator", "genre": "Sci-Fi", "release_date": "1984", "rating": "★★★★☆" },
-  { "id": 47, "title": "The Princess Bride", "genre": "Adventure", "release_date": "1987", "rating": "★★★★☆" },
-  { "id": 48, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆" },
-  { "id": 49, "title": "The Wizard of Oz", "genre": "Fantasy", "release_date": "1939", "rating": "★★★★★" },
-  { "id": 52, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆" },
-  { "id": 56, "title": "Schindler's List", "genre": "Drama", "release_date": "1993", "rating": "★★★★★" },
-  { "id": 57, "title": "Forrest Gump", "genre": "Drama", "release_date": "1994", "rating": "★★★★☆" },
-  { "id": 58, "title": "The Lord of the Rings: The Return of the King", "genre": "Fantasy", "release_date": "2003", "rating": "★★★★★" },
-  { "id": 60, "title": "The Matrix", "genre": "Sci-Fi", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 62, "title": "The Empire Strikes Back", "genre": "Sci-Fi", "release_date": "1980", "rating": "★★★★★" },
-  { "id": 63, "title": "Goodfellas", "genre": "Crime", "release_date": "1990", "rating": "★★★★★" },
-  { "id": 64, "title": "City of God", "genre": "Crime", "release_date": "2002", "rating": "★★★★☆" },
-  { "id": 65, "title": "The Silence of the Lambs", "genre": "Thriller", "release_date": "1991", "rating": "★★★★★" },
-  { "id": 66, "title": "Se7en", "genre": "Crime", "release_date": "1995", "rating": "★★★★☆" },
-  { "id": 67, "title": "The Usual Suspects", "genre": "Mystery", "release_date": "1995", "rating": "★★★★☆" },
-  { "id": 68, "title": "The Lion King", "genre": "Animation", "release_date": "1994", "rating": "★★★★☆" },
-  { "id": 69, "title": "Interstellar", "genre": "Sci-Fi", "release_date": "2014", "rating": "★★★★☆" },
-  { "id": 70, "title": "Saving Private Ryan", "genre": "War", "release_date": "1998", "rating": "★★★★☆" },
-  { "id": 71, "title": "The Green Mile", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 75, "title": "The Pianist", "genre": "Biography", "release_date": "2002", "rating": "★★★★☆" },
-  { "id": 76, "title": "The Intouchables", "genre": "Comedy", "release_date": "2011", "rating": "★★★★☆" },
-  { "id": 78, "title": "The Dark Knight Rises", "genre": "Action", "release_date": "2012", "rating": "★★★★☆" },
-  { "id": 79, "title": "The Godfather: Part II", "genre": "Crime", "release_date": "1974", "rating": "★★★★★" },
-  { "id": 80, "title": "The Lord of the Rings: The Two Towers", "genre": "Fantasy", "release_date": "2002", "rating": "★★★★☆" },
-  { "id": 81, "title": "Se7en", "genre": "Crime", "release_date": "1995", "rating": "★★★★☆" },
-  { "id": 82, "title": "Once Upon a Time in America", "genre": "Crime", "release_date": "1984", "rating": "★★★★☆" },
-  { "id": 87, "title": "The Shining", "genre": "Horror", "release_date": "1980", "rating": "★★★★☆" },
-  { "id": 91, "title": "Alien", "genre": "Sci-Fi", "release_date": "1979", "rating": "★★★★☆" },
-  { "id": 92, "title": "The Sixth Sense", "genre": "Mystery", "release_date": "1999", "rating": "★★★★☆" },
-  { "id": 94, "title": "The Godfather: Part III", "genre": "Crime", "release_date": "1990", "rating": "★★★★☆" },
-  { "id": 95, "title": "The Terminator", "genre": "Sci-Fi", "release_date": "1984", "rating": "★★★★☆" },
-  { "id": 96, "title": "The Princess Bride", "genre": "Adventure", "release_date": "1987", "rating": "★★★★☆" },
-  { "id": 97, "title": "The Italian Job", "genre": "Action", "release_date": "2003", "rating": "★★★★☆"},
-  {"id": 98, "title": "Mission Impossible", "genre": "Action", "release_date": "1996", "rating": "★★★★☆"},
-  {"id": 99, "title": "The Pursuit of Happiness", "genre": "Biography", "release_date": "2006", "rating": "★★★★☆"},
-  {"id": 100, "title": "American Sniper", "genre": "Biography", "release_date": "2014", "rating": "★★★★☆"}
+  { "id": 1, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆",
+    "details": "A mind-bending sci-fi thriller directed by Christopher Nolan. Starring Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page.",
+    "similar_movies": ["Interstellar", "The Matrix", "Eternal Sunshine of the Spotless Mind"]
+  },
+  { "id": 2, "title": "The Shawshank Redemption", "genre": "Drama", "release_date": "1994", "rating": "★★★★★",
+    "details": "A powerful drama directed by Frank Darabont. Starring Tim Robbins, Morgan Freeman, Bob Gunton.",
+    "similar_movies": ["The Green Mile", "The Godfather", "The Departed"]
+  },
+  { "id": 3, "title": "Pulp Fiction", "genre": "Crime", "release_date": "1994", "rating": "★★★★★",
+    "details": "Quentin Tarantino's iconic crime film with a nonlinear narrative. Starring John Travolta, Uma Thurman, Samuel L. Jackson.",
+    "similar_movies": ["Reservoir Dogs", "Kill Bill", "The Usual Suspects"]
+  },
+  { "id": 4, "title": "The Dark Knight", "genre": "Action", "release_date": "2008", "rating": "★★★★★",
+    "details": "Christopher Nolan's intense action-packed Batman sequel. Starring Christian Bale, Heath Ledger, Aaron Eckhart.",
+    "similar_movies": ["Inception", "The Avengers", "Logan"]
+  },
+  { "id": 5, "title": "Forrest Gump", "genre": "Drama", "release_date": "1994", "rating": "★★★★☆",
+    "details": "A heartwarming drama directed by Robert Zemeckis. Starring Tom Hanks, Robin Wright, Gary Sinise.",
+    "similar_movies": ["The Curious Case of Benjamin Button", "Big", "Rain Man"]
+  },
+  { "id": 6, "title": "The Godfather", "genre": "Crime", "release_date": "1972", "rating": "★★★★★",
+    "details": "Francis Ford Coppola's epic crime saga based on Mario Puzo's novel. Starring Marlon Brando, Al Pacino, James Caan.",
+    "similar_movies": ["Goodfellas", "Scarface", "The Sopranos"]
+  },
+  { "id": 7, "title": "Titanic", "genre": "Romance", "release_date": "1997", "rating": "★★★★☆",
+    "details": "James Cameron's epic romance set against the backdrop of the tragic Titanic disaster. Starring Leonardo DiCaprio, Kate Winslet, Billy Zane.",
+    "similar_movies": ["Romeo + Juliet", "Pearl Harbor", "Atonement"]
+  },
+  { "id": 8, "title": "The Matrix", "genre": "Sci-Fi", "release_date": "1999", "rating": "★★★★☆",
+    "details": "The Wachowskis' groundbreaking sci-fi action film with mind-bending visuals. Starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss.",
+    "similar_movies": ["Inception", "Blade Runner", "Ghost in the Shell"]
+  },
+  { "id": 9, "title": "The Lord of the Rings: The Fellowship of the Ring", "genre": "Fantasy", "release_date": "2001", "rating": "★★★★☆",
+    "details": "Peter Jackson's epic fantasy adaptation of J.R.R. Tolkien's novel. Starring Elijah Wood, Ian McKellen, Viggo Mortensen.",
+    "similar_movies": ["Harry Potter and the Sorcerer's Stone", "The Hobbit", "The Chronicles of Narnia"]
+  },
+  { "id": 10, "title": "Jurassic Park", "genre": "Adventure", "release_date": "1993", "rating": "★★★★☆",
+    "details": "Steven Spielberg's groundbreaking adventure featuring cloned dinosaurs. Starring Sam Neill, Laura Dern, Jeff Goldblum.",
+    "similar_movies": ["The Lost World: Jurassic Park", "King Kong", "Avatar"]
+  },
+  { "id": 11, "title": "Avatar", "genre": "Action", "release_date": "2009", "rating": "★★★★☆",
+    "details": "James Cameron's visually stunning sci-fi epic set on the alien world of Pandora. Starring Sam Worthington, Zoe Saldana, Sigourney Weaver.",
+    "similar_movies": ["Dances with Wolves", "The Last Samurai", "The Matrix"]
+  },
+  { "id": 12, "title": "Inglourious Basterds", "genre": "War", "release_date": "2009", "rating": "★★★★☆",
+    "details": "Quentin Tarantino's alternate history war film with a star-studded cast. Starring Brad Pitt, Christoph Waltz, Michael Fassbender.",
+    "similar_movies": ["Dunkirk", "Saving Private Ryan", "Fury"]
+  },
+  { "id": 13, "title": "The Silence of the Lambs", "genre": "Thriller", "release_date": "1991", "rating": "★★★★★",
+    "details": "Jonathan Demme's psychological thriller featuring Hannibal Lecter. Starring Jodie Foster, Anthony Hopkins, Scott Glenn.",
+    "similar_movies": ["Se7en", "Zodiac", "Mystic River"]
+  },
+  { "id": 14, "title": "Fight Club", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆",
+    "details": "David Fincher's cult classic exploring the dark side of consumer culture. Starring Brad Pitt, Edward Norton, Helena Bonham Carter.",
+    "similar_movies": ["American Psycho", "Memento", "The Machinist"]
+  },
+  { "id": 15, "title": "The Great Gatsby", "genre": "Romance", "release_date": "2013", "rating": "★★★★☆",
+    "details": "Baz Luhrmann's visually stunning adaptation of F. Scott Fitzgerald's novel. Starring Leonardo DiCaprio, Tobey Maguire, Carey Mulligan.",
+    "similar_movies": ["Midnight in Paris", "Moulin Rouge!", "A Single Man"]
+  },
+  { "id": 16, "title": "The Revenant", "genre": "Adventure", "release_date": "2015", "rating": "★★★★☆",
+    "details": "Alejandro G. Iñárritu's survival epic starring Leonardo DiCaprio. Also featuring Tom Hardy, Domhnall Gleeson.",
+    "similar_movies": ["Dances with Wolves", "The Grey", "Into the Wild"]
+  },
+  { "id": 17, "title": "Eternal Sunshine of the Spotless Mind", "genre": "Romance", "release_date": "2004", "rating": "★★★★☆",
+    "details": "Michel Gondry's unique romantic sci-fi film exploring memory erasure. Starring Jim Carrey, Kate Winslet, Elijah Wood.",
+    "similar_movies": ["Her", "Being John Malkovich", "The Science of Sleep"]
+  },
+  { "id": 18, "title": "Interstellar", "genre": "Sci-Fi", "release_date": "2014", "rating": "★★★★☆",
+    "details": "Christopher Nolan's epic space exploration film with stunning visuals. Starring Matthew McConaughey, Anne Hathaway, Jessica Chastain.",
+    "similar_movies": ["2001: A Space Odyssey", "Gravity", "Arrival"]
+  },
+  { "id": 19, "title": "The Lion King", "genre": "Animation", "release_date": "1994", "rating": "★★★★☆",
+    "details": "Disney's animated classic featuring Simba's coming-of-age journey. Voice cast includes Matthew Broderick, Jeremy Irons, James Earl Jones.",
+    "similar_movies": ["Beauty and the Beast", "Aladdin", "Finding Nemo"]
+  },
+  { "id": 20, "title": "Casablanca", "genre": "Romance", "release_date": "1942", "rating": "★★★★★",
+    "details": "Michael Curtiz's timeless romantic classic set during World War II. Starring Humphrey Bogart, Ingrid Bergman, Paul Henreid.",
+    "similar_movies": ["Gone with the Wind", "The Maltese Falcon", "Notorious"]
+  },
+  { "id": 21, "title": "The Social Network", "genre": "Drama", "release_date": "2010", "rating": "★★★★☆",
+    "details": "David Fincher's compelling drama depicting the founding of Facebook. Starring Jesse Eisenberg, Andrew Garfield, Justin Timberlake.",
+    "similar_movies": ["Steve Jobs", "Moneyball", "The Imitation Game"]
+  },
+  { "id": 22, "title": "Gladiator", "genre": "Action", "release_date": "2000", "rating": "★★★★☆",
+    "details": "Ridley Scott's epic historical drama set in ancient Rome. Starring Russell Crowe, Joaquin Phoenix, Connie Nielsen.",
+    "similar_movies": ["Braveheart", "300", "Troy"]
+  },
+  { "id": 23, "title": "Back to the Future", "genre": "Adventure", "release_date": "1985", "rating": "★★★★☆",
+    "details": "Robert Zemeckis' classic time-travel adventure featuring Marty McFly. Starring Michael J. Fox, Christopher Lloyd, Lea Thompson.",
+    "similar_movies": ["The Terminator", "Bill & Ted's Excellent Adventure", "Hot Tub Time Machine"]
+  },
+  { "id": 24, "title": "The Departed", "genre": "Crime", "release_date": "2006", "rating": "★★★★☆",
+    "details": "Martin Scorsese's gripping crime thriller with a star-studded cast. Starring Leonardo DiCaprio, Matt Damon, Jack Nicholson.",
+    "similar_movies": ["Goodfellas", "Infernal Affairs", "The Town"]
+  },
+  { "id": 25, "title": "Memento", "genre": "Mystery", "release_date": "2000", "rating": "★★★★☆",
+    "details": "Christopher Nolan's mind-bending mystery thriller told in reverse. Starring Guy Pearce, Carrie-Anne Moss, Joe Pantoliano.",
+    "similar_movies": ["The Prestige", "Shutter Island", "Se7en"]
+  },
+  { "id": 27, "title": "The Godfather: Part II", "genre": "Crime", "release_date": "1974", "rating": "★★★★★",
+    "details": "Francis Ford Coppola's acclaimed sequel continuing the Corleone saga. Starring Al Pacino, Robert De Niro, Robert Duvall.",
+    "similar_movies": ["Goodfellas", "Scarface", "The Sopranos"]
+  },
+  { "id": 28, "title": "The Usual Suspects", "genre": "Mystery", "release_date": "1995", "rating": "★★★★☆",
+    "details": "Bryan Singer's crime mystery featuring an unreliable narrator. Starring Kevin Spacey, Gabriel Byrne, Chazz Palminteri.",
+    "similar_movies": ["Seven", "Primal Fear", "The Departed"]
+  },
+  { "id": 29, "title": "Shutter Island", "genre": "Mystery", "release_date": "2010", "rating": "★★★★☆",
+    "details": "Martin Scorsese's psychological thriller set on a mysterious island. Starring Leonardo DiCaprio, Mark Ruffalo, Ben Kingsley.",
+    "similar_movies": ["Mystic River", "Inception", "The Sixth Sense"]
+  },
+  { "id": 30, "title": "The Grand Budapest Hotel", "genre": "Comedy", "release_date": "2014", "rating": "★★★★☆",
+    "details": "Wes Anderson's quirky comedy set in a luxurious European hotel. Starring Ralph Fiennes, Tony Revolori, Saoirse Ronan.",
+    "similar_movies": ["Moonrise Kingdom", "The Royal Tenenbaums", "Isle of Dogs"]
+  },
+  { "id": 31, "title": "La La Land", "genre": "Musical", "release_date": "2016", "rating": "★★★★☆",
+"details": "Damien Chazelle's enchanting musical drama set in Los Angeles. Starring Ryan Gosling, Emma Stone, John Legend.",
+"similar_movies": ["Moulin Rouge!", "Singin' in the Rain", "Whiplash"]
+},
+{ "id": 32, "title": "The Green Mile", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆",
+"details": "Frank Darabont's emotional drama based on Stephen King's novel. Starring Tom Hanks, Michael Clarke Duncan, David Morse.",
+"similar_movies": ["The Shawshank Redemption", "Forrest Gump", "A Beautiful Mind"]
+},
+{ "id": 33, "title": "Blade Runner", "genre": "Sci-Fi", "release_date": "1982", "rating": "★★★★☆",
+"details": "Ridley Scott's iconic sci-fi noir exploring the nature of humanity. Starring Harrison Ford, Rutger Hauer, Sean Young.",
+"similar_movies": ["The Matrix", "Ghost in the Shell", "Akira"]
+},
+{ "id": 34, "title": "Whiplash", "genre": "Drama", "release_date": "2014", "rating": "★★★★☆",
+"details": "Damien Chazelle's intense drama about a young drummer and his demanding music instructor. Starring Miles Teller, J.K. Simmons, Paul Reiser.",
+"similar_movies": ["La La Land", "Black Swan", "Birdman"]
+},
+{ "id": 35, "title": "The Dark Knight Rises", "genre": "Action", "release_date": "2012", "rating": "★★★★☆",
+"details": "Christopher Nolan's epic conclusion to the Dark Knight trilogy. Starring Christian Bale, Tom Hardy, Anne Hathaway.",
+"similar_movies": ["The Dark Knight", "Batman Begins", "Avengers: Endgame"]
+},
+{ "id": 36, "title": "Schindler's List", "genre": "Drama", "release_date": "1993", "rating": "★★★★★",
+"details": "Steven Spielberg's powerful drama based on the true story of Oskar Schindler. Starring Liam Neeson, Ben Kingsley, Ralph Fiennes.",
+"similar_movies": ["The Pianist", "Saving Private Ryan", "The Boy in the Striped Pyjamas"]
+},
+{ "id": 37, "title": "The Prestige", "genre": "Mystery", "release_date": "2006", "rating": "★★★★☆",
+"details": "Christopher Nolan's captivating mystery about rival magicians. Starring Hugh Jackman, Christian Bale, Scarlett Johansson.",
+"similar_movies": ["Inception", "Memento", "The Illusionist"]
+},
+{ "id": 38, "title": "City of God", "genre": "Crime", "release_date": "2002", "rating": "★★★★☆",
+"details": "Fernando Meirelles' crime drama set in the favelas of Rio de Janeiro. Starring Alexandre Rodrigues, Leandro Firmino, Matheus Nachtergaele.",
+"similar_movies": ["Goodfellas", "Scarface", "The Departed"]
+},
+{ "id": 39, "title": "Casino Royale", "genre": "Action", "release_date": "2006", "rating": "★★★★☆",
+"details": "Martin Campbell's James Bond film featuring Daniel Craig as the iconic spy. Also starring Eva Green, Mads Mikkelsen, Judi Dench.",
+"similar_movies": ["Skyfall", "GoldenEye", "Mission: Impossible - Fallout"]
+},
+{ "id": 40, "title": "Goodfellas", "genre": "Crime", "release_date": "1990", "rating": "★★★★★",
+"details": "Martin Scorsese's classic crime film based on the life of Henry Hill. Starring Robert De Niro, Ray Liotta, Joe Pesci.",
+"similar_movies": ["The Godfather", "Scarface", "The Sopranos"]
+},
+{ "id": 41, "title": "Amélie", "genre": "Romance", "release_date": "2001", "rating": "★★★★☆",
+"details": "Jean-Pierre Jeunet's whimsical romantic comedy set in Paris. Starring Audrey Tautou, Mathieu Kassovitz, Rufus.",
+"similar_movies": ["Eternal Sunshine of the Spotless Mind", "The Grand Budapest Hotel", "Midnight in Paris"]
+},
+{ "id": 42, "title": "No Country for Old Men", "genre": "Thriller", "release_date": "2007", "rating": "★★★★☆",
+"details": "Joel and Ethan Coen's suspenseful thriller based on Cormac McCarthy's novel. Starring Tommy Lee Jones, Javier Bardem, Josh Brolin.",
+"similar_movies": ["Fargo", "The Departed", "Prisoners"]
+},
+{ "id": 43, "title": "The Terminator", "genre": "Sci-Fi", "release_date": "1984", "rating": "★★★★☆",
+"details": "James Cameron's sci-fi classic featuring Arnold Schwarzenegger as the iconic Terminator. Also starring Linda Hamilton, Michael Biehn.",
+"similar_movies": ["Blade Runner", "Aliens", "The Matrix"]
+},
+{ "id": 44, "title": "The Princess Bride", "genre": "Adventure", "release_date": "1987", "rating": "★★★★☆",
+"details": "Rob Reiner's beloved adventure film with romance and humor. Starring Cary Elwes, Robin Wright, Mandy Patinkin.",
+"similar_movies": ["Stardust", "Ever After", "The NeverEnding Story"]
+},
+{ "id": 45, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆",
+"details": "Christopher Nolan's mind-bending sci-fi thriller. Starring Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page.",
+"similar_movies": ["Interstellar", "The Matrix", "Eternal Sunshine of the Spotless Mind"]
+},
+{ "id": 46, "title": "The Wizard of Oz", "genre": "Fantasy", "release_date": "1939", "rating": "★★★★★",
+"details": "Victor Fleming's timeless fantasy musical based on L. Frank Baum's novel. Starring Judy Garland, Frank Morgan, Ray Bolger.",
+"similar_movies": ["Alice in Wonderland", "The NeverEnding Story", "Pan's Labyrinth"]
+},
+{ "id": 47, "title": "Inception", "genre": "Sci-Fi", "release_date": "2010", "rating": "★★★★☆",
+"details": "Christopher Nolan's mind-bending sci-fi thriller. Starring Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page.",
+"similar_movies": ["Interstellar", "The Matrix", "Eternal Sunshine of the Spotless Mind"]
+},
+{ "id": 48, "title": "Schindler's List", "genre": "Drama", "release_date": "1993", "rating": "★★★★★",
+"details": "Steven Spielberg's powerful drama based on the true story of Oskar Schindler. Starring Liam Neeson, Ben Kingsley, Ralph Fiennes.",
+"similar_movies": ["The Pianist", "Saving Private Ryan", "The Boy in the Striped Pyjamas"]
+},
+{ "id": 49, "title": "Forrest Gump", "genre": "Drama", "release_date": "1994", "rating": "★★★★☆",
+"details": "Robert Zemeckis' heartwarming drama with Tom Hanks in the titular role. Also starring Robin Wright, Gary Sinise.",
+"similar_movies": ["The Curious Case of Benjamin Button", "Big", "Rain Man"]
+},
+{ "id": 50, "title": "The Lord of the Rings: The Return of the King", "genre": "Fantasy", "release_date": "2003", "rating": "★★★★★",
+"details": "Peter Jackson's epic fantasy concluding the Lord of the Rings trilogy. Starring Elijah Wood, Ian McKellen, Viggo Mortensen.",
+"similar_movies": ["The Hobbit", "Harry Potter and the Deathly Hallows – Part 2", "Braveheart"]
+},
+{ "id": 51, "title": "The Matrix", "genre": "Sci-Fi", "release_date": "1999", "rating": "★★★★☆",
+"details": "The Wachowskis' groundbreaking sci-fi action film with mind-bending visuals. Starring Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss.",
+"similar_movies": ["Inception", "Blade Runner", "Ghost in the Shell"]
+},
+{ "id": 52, "title": "The Empire Strikes Back", "genre": "Sci-Fi", "release_date": "1980", "rating": "★★★★★",
+"details": "Irvin Kershner's iconic space opera and the second installment in the Star Wars saga. Starring Mark Hamill, Harrison Ford, Carrie Fisher.",
+"similar_movies": ["Star Wars: Episode IV - A New Hope", "Return of the Jedi", "Blade Runner"]
+},
+{ "id": 53, "title": "Goodfellas", "genre": "Crime", "release_date": "1990", "rating": "★★★★★",
+"details": "Martin Scorsese's classic crime film based on the life of Henry Hill. Starring Robert De Niro, Ray Liotta, Joe Pesci.",
+"similar_movies": ["The Godfather", "Scarface", "The Sopranos"]
+},
+{ "id": 54, "title": "City of God", "genre": "Crime", "release_date": "2002", "rating": "★★★★☆",
+"details": "Fernando Meirelles' crime drama set in the favelas of Rio de Janeiro. Starring Alexandre Rodrigues, Leandro Firmino, Matheus Nachtergaele.",
+"similar_movies": ["Goodfellas", "Scarface", "The Departed"]
+},
+{ "id": 55, "title": "The Silence of the Lambs", "genre": "Thriller", "release_date": "1991", "rating": "★★★★★",
+"details": "Jonathan Demme's psychological thriller featuring Hannibal Lecter. Starring Jodie Foster, Anthony Hopkins, Scott Glenn.",
+"similar_movies": ["Se7en", "Zodiac", "Mystic River"]
+},
+{ "id": 56, "title": "Se7en", "genre": "Crime", "release_date": "1995", "rating": "★★★★☆",
+"details": "David Fincher's psychological crime thriller about a series of grisly murders. Starring Morgan Freeman, Brad Pitt, Kevin Spacey.",
+"similar_movies": ["The Silence of the Lambs", "Zodiac", "Prisoners"]
+},
+{ "id": 57, "title": "The Usual Suspects", "genre": "Mystery", "release_date": "1995", "rating": "★★★★☆",
+"details": "Bryan Singer's crime mystery featuring an unreliable narrator. Starring Kevin Spacey, Gabriel Byrne, Chazz Palminteri.",
+"similar_movies": ["Seven", "Primal Fear", "The Departed"]
+},
+{ "id": 58, "title": "The Lion King", "genre": "Animation", "release_date": "1994", "rating": "★★★★☆",
+"details": "Disney's animated classic featuring Simba's coming-of-age journey. Voice cast includes Matthew Broderick, Jeremy Irons, James Earl Jones.",
+"similar_movies": ["Beauty and the Beast", "Aladdin", "Finding Nemo"]
+},
+{ "id": 59, "title": "Interstellar", "genre": "Sci-Fi", "release_date": "2014", "rating": "★★★★☆",
+"details": "Christopher Nolan's epic space exploration film with stunning visuals. Starring Matthew McConaughey, Anne Hathaway, Jessica Chastain.",
+"similar_movies": ["2001: A Space Odyssey", "Gravity", "Arrival"]
+},
+{ "id": 60, "title": "Saving Private Ryan", "genre": "War", "release_date": "1998", "rating": "★★★★☆",
+"details": "Steven Spielberg's intense war drama set during the Normandy invasion. Starring Tom Hanks, Matt Damon, Tom Sizemore.",
+"similar_movies": ["Band of Brothers", "Apocalypse Now", "Dunkirk"]
+},
+{ "id": 61, "title": "The Green Mile", "genre": "Drama", "release_date": "1999", "rating": "★★★★☆",
+"details": "Frank Darabont's emotional drama based on Stephen King's novel. Starring Tom Hanks, Michael Clarke Duncan, David Morse.",
+"similar_movies": ["The Shawshank Redemption", "Forrest Gump", "A Beautiful Mind"]
+},
+{ "id": 62, "title": "The Pianist", "genre": "Biography", "release_date": "2002", "rating": "★★★★☆",
+"details": "Roman Polanski's biographical war film based on the life of pianist Władysław Szpilman. Starring Adrien Brody, Thomas Kretschmann, Frank Finlay.",
+"similar_movies": ["Schindler's List", "The Boy in the Striped Pyjamas", "Life Is Beautiful"]
+},
+{ "id": 63, "title": "The Intouchables", "genre": "Comedy", "release_date": "2011", "rating": "★★★★☆",
+"details": "Olivier Nakache and Éric Toledano's heartwarming comedy-drama about an unlikely friendship. Starring François Cluzet, Omar Sy, Anne Le Ny.",
+"similar_movies": ["Forrest Gump", "A Beautiful Mind", "Rain Man"]
+},
+{ "id": 64, "title": "The Dark Knight Rises", "genre": "Action", "release_date": "2012", "rating": "★★★★☆",
+"details": "Christopher Nolan's epic conclusion to the Dark Knight trilogy. Starring Christian Bale, Tom Hardy, Anne Hathaway.",
+"similar_movies": ["The Dark Knight", "Batman Begins", "Avengers: Endgame"]
+},
+{ "id": 65, "title": "The Godfather: Part II", "genre": "Crime", "release_date": "1974", "rating": "★★★★★",
+"details": "Francis Ford Coppola's masterful sequel to The Godfather. Starring Al Pacino, Robert De Niro, Robert Duvall.",
+"similar_movies": ["The Godfather", "Goodfellas", "Scarface"]
+},
+{ "id": 66, "title": "The Lord of the Rings: The Two Towers", "genre": "Fantasy", "release_date": "2002", "rating": "★★★★☆",
+"details": "Peter Jackson's epic fantasy continuing the Lord of the Rings trilogy. Starring Elijah Wood, Ian McKellen, Viggo Mortensen.",
+"similar_movies": ["The Fellowship of the Ring", "The Return of the King", "Harry Potter and the Prisoner of Azkaban"]
+},
+{ "id": 67, "title": "Se7en", "genre": "Crime", "release_date": "1995", "rating": "★★★★☆",
+"details": "David Fincher's psychological crime thriller about a series of grisly murders. Starring Morgan Freeman, Brad Pitt, Kevin Spacey.",
+"similar_movies": ["The Silence of the Lambs", "Zodiac", "Prisoners"]
+},
+{ "id": 68, "title": "Once Upon a Time in America", "genre": "Crime", "release_date": "1984", "rating": "★★★★☆",
+"details": "Sergio Leone's epic crime film spanning decades in the lives of Jewish gangsters. Starring Robert De Niro, James Woods, Elizabeth McGovern.",
+"similar_movies": ["The Godfather", "Goodfellas", "Scarface"]
+},
+{ "id": 69, "title": "The Shining", "genre": "Horror", "release_date": "1980", "rating": "★★★★☆",
+"details": "Stanley Kubrick's psychological horror film based on Stephen King's novel. Starring Jack Nicholson, Shelley Duvall, Danny Lloyd.",
+"similar_movies": ["Psycho", "Rosemary's Baby", "A Clockwork Orange"]
+},
+{ "id": 70, "title": "Alien", "genre": "Sci-Fi", "release_date": "1979", "rating": "★★★★☆",
+"details": "Ridley Scott's iconic sci-fi horror featuring Sigourney Weaver as Ellen Ripley. Also starring Tom Skerritt, John Hurt.",
+"similar_movies": ["Blade Runner", "The Thing", "Predator"]
+},
+{ "id": 71, "title": "The Sixth Sense", "genre": "Mystery", "release_date": "1999", "rating": "★★★★☆",
+"details": "M. Night Shyamalan's supernatural thriller with a famous twist. Starring Bruce Willis, Haley Joel Osment, Toni Collette.",
+"similar_movies": ["Unbreakable", "Signs", "The Others"]
+},
+{ "id": 72, "title": "The Godfather: Part III", "genre": "Crime", "release_date": "1990", "rating": "★★★★☆",
+"details": "Francis Ford Coppola's final chapter in The Godfather trilogy. Starring Al Pacino, Diane Keaton, Andy Garcia.",
+"similar_movies": ["The Godfather", "Goodfellas", "Scarface"]
+},
+{ "id": 73, "title": "The Terminator", "genre": "Sci-Fi", "release_date": "1984", "rating": "★★★★☆",
+"details": "James Cameron's sci-fi classic featuring Arnold Schwarzenegger as the iconic Terminator. Also starring Linda Hamilton, Michael Biehn.",
+"similar_movies": ["Blade Runner", "Aliens", "The Matrix"]
+},
+{ "id": 74, "title": "The Princess Bride", "genre": "Adventure", "release_date": "1987", "rating": "★★★★☆",
+"details": "Rob Reiner's beloved adventure film with romance and humor. Starring Cary Elwes, Robin Wright, Mandy Patinkin.",
+"similar_movies": ["Stardust", "Ever After", "The NeverEnding Story"]
+},
+{ "id": 75, "title": "The Italian Job", "genre": "Action", "release_date": "2003", "rating": "★★★★☆",
+"details": "F. Gary Gray's heist film with an ensemble cast. Starring Mark Wahlberg, Charlize Theron, Edward Norton.",
+"similar_movies": ["Ocean's Eleven", "Snatch", "Heat"]
+},
+{ "id": 76, "title": "Mission Impossible", "genre": "Action", "release_date": "1996", "rating": "★★★★☆",
+"details": "Brian De Palma's action spy film based on the TV series. Starring Tom Cruise, Jon Voight, Emmanuelle Béart.",
+"similar_movies": ["James Bond films", "Bourne series", "Die Hard"]
+},
+{ "id": 77, "title": "The Pursuit of Happiness", "genre": "Biography", "release_date": "2006", "rating": "★★★★☆",
+"details": "Gabriele Muccino's inspirational biographical drama. Starring Will Smith, Jaden Smith, Thandie Newton.",
+"similar_movies": ["The Blind Side", "A Beautiful Mind", "The Social Network"]
+},
+{ "id": 78, "title": "American Sniper", "genre": "Biography", "release_date": "2014", "rating": "★★★★☆",
+"details": "Clint Eastwood's biographical war drama based on Chris Kyle's autobiography. Starring Bradley Cooper, Sienna Miller, Kyle Gallner.",
+"similar_movies": ["Lone Survivor", "Zero Dark Thirty", "Hacksaw Ridge"]
+}
 ]
