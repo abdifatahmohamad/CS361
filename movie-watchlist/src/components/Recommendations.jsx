@@ -1,7 +1,5 @@
-// Recommendations.jsx
 import React, { useState, useEffect } from 'react';
 import { fetchMovies } from '../api';
-import LoadingSpinner from './LoadingSpinner'; // Import LoadingSpinner component
 
 function Recommendations() {
   const [movies, setMovies] = useState([]);
@@ -17,7 +15,7 @@ function Recommendations() {
         console.error('Error fetching movies:', error);
         setLoading(false); // Set loading to false in case of error
       }
-    }, 2000); // Add a delay of 2000 milliseconds (2 seconds)
+    }, 1000); // Add a delay of 1000 milliseconds (1 second)
 
     return () => clearTimeout(delay); // Clear the timeout on unmount
 
@@ -28,7 +26,9 @@ function Recommendations() {
   return (
     <div className="movie-grid-container">
       {loading ? ( // Conditionally render spinner while loading
-        <LoadingSpinner />
+        <div className="spinner-container">
+          <div className="spinner"></div>
+        </div>
       ) : (
         <div className="movie-grid">
           {filteredMovies.map(movie => (

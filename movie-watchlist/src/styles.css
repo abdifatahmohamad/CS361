@@ -145,6 +145,20 @@ body {
   height: 100vh;
 }
 
+.watchlist-heading {
+  margin-bottom: 20px;
+}
+
+.empty-watchlist {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.empty-watchlist a {
+  color: #007bff;
+}
+
 .spinner {
   border: 4px solid rgba(0, 0, 0, 0.1);
   border-left-color: #333;
