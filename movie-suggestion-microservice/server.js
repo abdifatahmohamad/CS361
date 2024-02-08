@@ -1,6 +1,8 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 const moviesData = fs.readFileSync('movies.json');
 const movies = JSON.parse(moviesData);
