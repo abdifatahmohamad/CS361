@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const taskRoutes = require('./src/routes/taskRoutes');
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
+
 const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
