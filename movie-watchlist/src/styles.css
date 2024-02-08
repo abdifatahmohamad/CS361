@@ -1,0 +1,161 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 0px 0;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styles */
+.logo {
+  font-family: 'Arial', sans-serif; 
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #fff; 
+  margin: 0; 
+  padding: 5px 5px; 
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+}
+
+.navbar .nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .nav-links li a.active {
+  color: #ffcc00;
+}
+
+/* Movie grid styles */
+.movie-grid-container {
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr); /* Two grid columns */
+  grid-gap: 20px;
+}
+
+.movie-card {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Button styles */
+.btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 16px; /* Add padding */
+  border: none;
+  cursor: pointer;
+}
+
+/* Button colors */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff; /* White text on blue background */
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff; /* White text on gray background */
+}
+
+.btn-info {
+  background-color: #17a2b8;
+  color: #fff; /* White text on cyan background */
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff; /* White text on green background */
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #000; /* Black text on yellow background */
+}
+
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
