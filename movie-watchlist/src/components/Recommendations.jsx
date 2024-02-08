@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchMovies } from '../api';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Recommendations() {
   const [movies, setMovies] = useState([]);
@@ -26,15 +28,16 @@ function Recommendations() {
   const handleAddToWatchlist = (movie) => {
     const watchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
     if (watchlist.some((item) => item.id === movie.id)) {
-      alert('Movie already in the watchlist!');
+      toast.error('Movie already in the watchlist!');
     } else {
       localStorage.setItem('watchlist', JSON.stringify([...watchlist, movie]));
-      alert('Movie added to Watchlist!');
+      toast.success('Movie added to Watchlist!');
     }
   };
 
   return (
     <div className="movie-grid-container">
+      <ToastContainer position="top-center" />
       {loading ? ( // Conditionally render spinner while loading
         <div className="spinner-container">
           <div className="spinner"></div>

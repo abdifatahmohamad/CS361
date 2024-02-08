@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchMovies } from '../api';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Watchlist() {
   const [watchlist, setWatchlist] = useState([]);
@@ -9,7 +11,7 @@ function Watchlist() {
   useEffect(() => {
     const storedWatchlist = JSON.parse(localStorage.getItem('watchlist')) || [];
     setWatchlist(storedWatchlist);
-    
+
     // Simulate loading delay
     const delay = setTimeout(() => {
       setLoading(false); // Set loading to false after delay
@@ -19,13 +21,15 @@ function Watchlist() {
   }, []);
 
   const removeFromWatchlist = (movieId) => {
-    const updatedWatchlist = watchlist.filter(movie => movie.id !== movieId);
+    const updatedWatchlist = watchlist.filter((movie) => movie.id !== movieId);
     setWatchlist(updatedWatchlist);
     localStorage.setItem('watchlist', JSON.stringify(updatedWatchlist));
+    toast.success('Movie removed from Watchlist!');
   };
 
   return (
     <div className="movie-grid-container">
+      <ToastContainer position="top-center" />
       {loading ? ( // Conditionally render spinner while loading
         <div className="spinner-container">
           <div className="spinner"></div>
