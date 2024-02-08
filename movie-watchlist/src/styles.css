@@ -61,6 +61,8 @@ body {
 /* Movie grid styles */
 .movie-grid-container {
   padding: 20px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 .movie-grid {
@@ -136,8 +138,27 @@ body {
   color: #000; /* Black text on yellow background */
 }
 
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #333;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Footer styles */
 .footer {
