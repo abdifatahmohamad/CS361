@@ -4,11 +4,16 @@ import { fetchMovies } from '../api';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Modal from './Modal'; // Import the Modal component
+import '../Modal.css'; // Import the CSS for the Modal
 
 function MovieGrid() {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedMovie, setSelectedMovie] = useState(null); // State to track selected movie for modal
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
   const navigate = useNavigate();
+  const [movieId, setMovieId] = useState(null); // State to store movie id for modal
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -51,6 +56,18 @@ function MovieGrid() {
     navigate('/recommendations');
   };
 
+  // Function to handle the click event of the Details button
+  const handleDetailsClick = (movie) => {
+    setSelectedMovie(movie);
+    setMovieId(movie.id); // Set the movieId state
+    setShowModal(true); // Show the modal
+  };
+
+  // Function to close the modal
+  const handleCloseModal = () => {
+    setShowModal(false); // Hide the modal
+  };
+
   return (
     <div className="movie-grid-container">
       <ToastContainer position="top-center" />
@@ -77,7 +94,10 @@ function MovieGrid() {
                       <button className="btn btn-secondary" onClick={() => handleAddToWatched(movie)}>
                         Watched
                       </button>
-                      <button className="btn btn-info">Details</button>
+                      {/* Open the modal on Details button click */}
+                      <button className="btn btn-info" onClick={() => handleDetailsClick(movie)}>
+                        Details
+                      </button>
                       <button className="btn btn-success" onClick={handleRecommendationsClick}>
                         Recommendations
                       </button>
@@ -90,6 +110,19 @@ function MovieGrid() {
           </div>
         </div>
       )}
+
+      {/* Render Modal component if showModal is true */}
+      <Modal isOpen={showModal} onClose={handleCloseModal} movieId={movieId}>
+        {selectedMovie && (
+          <div className="modal-content">
+            <h2>Movie Details</h2>
+            <p>Title: {selectedMovie.title}</p>
+            <p>Genre: {selectedMovie.genre}</p>
+            <p>Release Date: {selectedMovie.release_date}</p>
+            <p>Rating: {selectedMovie.rating}</p>
+          </div>
+        )}
+      </Modal>
     </div>
   );
 }

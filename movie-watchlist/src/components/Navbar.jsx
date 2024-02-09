@@ -12,7 +12,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <h1 className="logo">Movie Watchlist</h1>
+      <Link to="/" className="logo">
+          <h1 className="logo">Movie Watchlist</h1>
+        </Link>
         <ul className="nav-links">
           <li>
             <Link to="/" className={isHomeActive() ? 'active' : ''}>Home</Link>

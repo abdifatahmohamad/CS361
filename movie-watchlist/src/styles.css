@@ -37,7 +37,9 @@ body {
   font-weight: bold; 
   color: #fff; 
   margin: 0; 
-  padding: 5px 5px; 
+  padding: 5px 5px;
+  cursor: pointer;
+  text-decoration: none; 
 }
 
 .navbar .nav-links {
@@ -203,3 +205,34 @@ body {
 .footer p {
   margin-bottom: 10px;
 }
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 17px; /* Reduce logo font size for smaller screens */
+  } 
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns for smaller screens */
+  }
+
+  .card-body {
+    padding: 10px; /* Reduce card body padding for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1rem; /* Reduce card title font size for smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Reduce card text font size for smaller screens */
+  }
+
+  .btn {
+    padding: 6px 12px; /* Reduce button padding for smaller screens */
+  }
+
+  .footer p {
+    font-size: 14px; /* Adjust footer text size for smaller screens */
+  }
+}
+
