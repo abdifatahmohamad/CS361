@@ -28,6 +28,11 @@ const addTask = async (newTask) => {
   // Assign a new ID for the new task as a number
   newTask.id = maxId + 1;
 
+  // Add completedTime property with the current timestamp if the task is completed
+  if (newTask.completed) {
+    newTask.completedTime = new Date().toISOString();
+  }
+
   // Create a new object with "id" as the first property
   const reorderedNewTask = { id: newTask.id, ...newTask };
 
@@ -45,6 +50,11 @@ const updateTask = async (taskId, updatedTask) => {
 
   if (taskIndex !== -1) {
     tasks[taskIndex] = { ...tasks[taskIndex], ...updatedTask };
+
+  // If the task is marked as completed, set the completedTime property
+  if (updatedTask.completed) {
+    tasks[taskIndex].completedTime = new Date().toISOString();
+  }
     await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
     return true;
   } else {
