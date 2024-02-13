@@ -19,7 +19,7 @@ function MovieGrid() {
     const fetchMovieData = async () => {
       try {
         // Simulate delay before fetching data
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(resolve => setTimeout(resolve, 500)); // Delay 500 milliseconds (0.5 seconds)
         const data = await fetchMovies();
         setMovies(data.slice(0, 6));
         setLoading(false);

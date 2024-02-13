@@ -15,7 +15,7 @@ function Watchlist() {
     // Simulate loading delay
     const delay = setTimeout(() => {
       setLoading(false); // Set loading to false after delay
-    }, 1000); // Add a delay of 1000 milliseconds (1 second)
+    }, 500); // Add a delay of 500 milliseconds (0.5 seconds)
 
     return () => clearTimeout(delay); // Clear the timeout on unmount
   }, []);

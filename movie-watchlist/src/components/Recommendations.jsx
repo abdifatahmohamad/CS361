@@ -17,7 +17,7 @@ function Recommendations() {
         console.error('Error fetching movies:', error);
         setLoading(false); // Set loading to false in case of error
       }
-    }, 1000); // Add a delay of 1000 milliseconds (1 second)
+    }, 500); // Add a delay of 500 milliseconds (0.5 seconds)
 
     return () => clearTimeout(delay); // Clear the timeout on unmount
 
