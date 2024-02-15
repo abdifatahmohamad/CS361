@@ -10,7 +10,61 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-This microservice provides a simple API for Daily Tasklist Web App.
+This microservice provides a simple API for the Daily Tasklist Web App.
+
+## Design Diagram
+
++------------------------+            +--------------------------+            +------------------------+
+|                        |            |                          |            |                        |
+|    Client Application  |            |   taskController.js      |            |    taskService.js      |
+|                        |            |                          |            |                        |
++------------------------+            +--------------------------+            +------------------------+
+          |                                   |                                   |
+          |                                   |                                   |
+          |    HTTP GET Request (GET /tasks)  |                                   |
+          |---------------------------------->|                                   |
+          |                                   |                                   |
+          |                                   |    Retrieve Tasks                 |
+          |                                   |---------------------------------->|
+          |                                   |                                   |
+          |                                   |           Read tasks.json         |
+          |                                   |<----------------------------------|
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |                                   |                                   |
+          |    HTTP Response (List of tasks)  |                                   |
+          |<----------------------------------|                                   |
+          |                                   |                                   |
+
+1. **Client Application (Client):**
+   - Represents the external application (my partner's daily tasklist web app) that interacts with the task-list-api to get a list of tasks.
+
+2. **taskController.js (Controller):**
+   - This is the controller module responsible for handling incoming requests from the client. It includes functions like getAllTasks to retrieve tasks.
+
+3. **taskService.js (Service):**
+   - Represents the service layer responsible for managing data operations. It contains functions like getAllTasks to read tasks from the tasks.json file.
+
+4. **HTTP GET Request (GET /tasks):**
+   - The client initiates a request to the task-list-api by sending an HTTP GET request to the /tasks endpoint.
+
+5. **Retrieve Tasks:**
+   - taskController.js handles the incoming request and calls the corresponding function in taskService.js to retrieve tasks.
+
+6. **Read tasks.json:**
+   - taskService.js reads the tasks.json file to fetch the list of tasks.
+
+7. **HTTP Response (List of tasks):**
+   - The retrieved tasks are sent back as an HTTP response to the client.
+
+8. **Client Receives Data:**
+   - The client receives the list of tasks in the response and can then use this data for display or further processing.
+
 
 ## Installation
 
