@@ -44,23 +44,30 @@ const addTask = async (newTask) => {
 
 
 const updateTask = async (taskId, updatedTask) => {
-  let tasks = await getAllTasks();
-  taskId = Number(taskId);
-  const taskIndex = tasks.findIndex((t) => t.id === taskId);
+  try {
+    let tasks = await getAllTasks();
+    taskId = Number(taskId);
+    const taskIndex = tasks.findIndex((t) => t.id === taskId);
 
-  if (taskIndex !== -1) {
-    tasks[taskIndex] = { ...tasks[taskIndex], ...updatedTask };
+    if (taskIndex !== -1) {
+      tasks[taskIndex] = { ...tasks[taskIndex], ...updatedTask };
 
-  // If the task is marked as completed, set the completedTime property
-  if (updatedTask.completed) {
-    tasks[taskIndex].completedTime = new Date().toISOString();
-  }
-    await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
-    return true;
-  } else {
-    return false;
+      // If the task is marked as completed, set the completedTime property
+      if (updatedTask.completed) {
+        tasks[taskIndex].completedTime = new Date().toISOString();
+      }
+
+      await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
+      return true;
+    } else {
+      return false;
+    }
+  } catch (error) {
+    console.error('Error updating task:', error);
+    throw error;
   }
 };
+
 
 const deleteTask = async (taskId) => {
   let tasks = await getAllTasks();
