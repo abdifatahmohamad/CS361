@@ -14,6 +14,8 @@ This microservice provides a simple API for the Daily Tasklist Web App.
 
 ## Design Diagram
 
+```bash
+
 +------------------------+            +--------------------------+            +------------------------+
 |                        |            |                          |            |                        |
 |    Client Application  |            |   taskController.js      |            |    taskService.js      |
@@ -64,7 +66,7 @@ This microservice provides a simple API for the Daily Tasklist Web App.
 
 8. **Client Receives Data:**
    - The client receives the list of tasks in the response and can then use this data for display or further processing.
-
+```
 
 ## Installation
 
