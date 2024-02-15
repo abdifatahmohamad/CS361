@@ -42,6 +42,7 @@ This microservice provides a simple API for the Daily Tasklist Web App.
           |    HTTP Response (List of tasks)  |                                   |
           |<----------------------------------|                                   |
           |                                   |                                   |
+```
 
 1. **Client Application (Client):**
    - Represents the external application (my partner's daily tasklist web app) that interacts with the task-list-api to get a list of tasks.
@@ -66,7 +67,6 @@ This microservice provides a simple API for the Daily Tasklist Web App.
 
 8. **Client Receives Data:**
    - The client receives the list of tasks in the response and can then use this data for display or further processing.
-```
 
 ## Installation
 
