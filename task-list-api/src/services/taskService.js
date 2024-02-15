@@ -68,20 +68,26 @@ const updateTask = async (taskId, updatedTask) => {
   }
 };
 
-
 const deleteTask = async (taskId) => {
-  let tasks = await getAllTasks();
-  taskId = Number(taskId);
-  const taskIndex = tasks.findIndex((t) => t.id === taskId);
+  try {
+    let tasks = await getAllTasks();
+    taskId = Number(taskId);
+    const taskIndex = tasks.findIndex((t) => t.id === taskId);
 
-  if (taskIndex !== -1) {
-    const deletedTask = tasks.splice(taskIndex, 1)[0];
-    await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
-    return deletedTask;
-  } else {
-    return null;
+    if (taskIndex !== -1) {
+      const deletedTask = tasks.splice(taskIndex, 1)[0];
+      await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
+      return deletedTask;
+    } else {
+      return null;
+    }
+  } catch (error) {
+    // Handle any errors that may occur during the deletion process
+    console.error('Error deleting task:', error.message);
+    throw error; 
   }
 };
+
 
 module.exports = {
   getAllTasks,
