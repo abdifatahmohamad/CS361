@@ -248,10 +248,5 @@
     "id": 50,
     "task": "Visit a historical site",
     "completed": false
-  },
-  {
-    "id": 51,
-    "task": "New Task after ID 50",
-    "completed": false
   }
 ]
