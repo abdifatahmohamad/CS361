@@ -157,7 +157,7 @@ curl http://localhost:3000/tasks
    [
   {
     "id": 1,
-    "task": "Complete Project A",
+    "task": "Learn a new programming language",
     "completed": false
   },
   {
