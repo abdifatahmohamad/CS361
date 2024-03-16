@@ -65,11 +65,20 @@ function Recommendations() {
             <div className="movie-card" key={movie.id}>
               <div className="card">
                 <div className="card-body">
-                  <h5 className="card-title">Movie {movie.id}</h5>
-                  <p className="card-text">Movie Title: {movie.title}</p>
-                  <p className="card-text">Genre: {movie.genre}</p>
-                  <p className="card-text">Release Date: {movie.release_date}</p>
-                  <p className="card-text">Rating: {movie.rating}</p>
+                  {/* Movie Details */}
+                  <div className="movie-details">
+                      <div className="movie-card-box">
+                      <h5 className="card-title">Movie {movie.id}</h5>
+                      <p className="card-text">Movie Title: {movie.title}</p>
+                      <p className="card-text">Genre: {movie.genre}</p>
+                      <p className="card-text">Release Date: {movie.release_date}</p>
+                      <p className="card-text">Rating: {movie.rating}</p>
+                      </div>
+                      {/* Display Movie Poster Image */}
+                      <div className="movie-poster">
+                        <img src={`https://movie-poster-microservice.onrender.com/${movie.id}`} alt={`Poster for ${movie.title}`} />
+                      </div>
+                    </div>
                   <div className="button-group">
                     <button className="btn btn-primary" onClick={() => handleAddToWatchlist(movie)}>
                       Add to Watchlist
