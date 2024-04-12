@@ -101,7 +101,7 @@ This microservice provides a simple API for the Daily Tasklist Web App.
 4. Microservice directory structure:
 
    ```bash
-      task-list-api
+task-list-api
    |-- src
    |   |-- controllers
    |   |   |-- taskController.js
